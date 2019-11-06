@@ -1,0 +1,42 @@
+﻿<!--맛집-->
+<html>
+
+<body>
+
+<head>
+
+<meta charset="UTF-8">
+
+</head>
+
+<a href=index.html><img src="배너.png" style="position:relative;left:100;top:5" width="300" height="100"></a>
+
+<a href=sub6.html><img src="아키네이터.png" style="position:absolute;left:400;top:30" width="170" height="60"></a>
+
+<a href=sub2.html><p style="position:absolute; left:650; top:30; font-family:sans-serif; color:black">여행계획</p></a>
+
+<p style="position:absolute; left:750; top:30; font-family:sans-serif; color:#599bf2"><b>맛집검색</b></p>
+
+<a href=sub3.html><p style="position:absolute; left:865; top:30; font-family:sans-serif; color:black">게시판</p></a>
+<a href=sub5.html><p style="position:absolute; left:950; top:30; font-family:sans-serif; color:black">마이페이지</p></a>
+
+<input style="position:absolute; left:200; top:150;width:500;height:30" type="search" placeholder="주소입력 예)**동">
+
+<div id="map" style="position:absolute;  left:200; top:200; width:300;height:300;"></div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=648f8c5fcaf73bf2d3c023b91b3735a4"></script>
+<script>
+	var container = document.getElementById('map');
+	var options = {
+		center: new daum.maps.LatLng(33.450701, 126.570667),
+		level: 3
+	};
+	var map = new daum.maps.Map(container, options);
+</script>
+<div style="position:absolute; left:520; top:200; border:1px solid; width:510; height:300" "></div>
+
+<p style="position:absolute; left:200; top:500; font-family:sans-serif; color:black"><b>리뷰</b></p>
+<div style="position:absolute; left:200; top:540; border:1px solid; width:830; height:180" "></div>
+
+</body>
+
+</html>

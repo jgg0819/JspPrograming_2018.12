@@ -1,0 +1,32 @@
+<html>
+<script>
+function valid_check()
+{
+	if(document.frm2.userid.value=="")
+	 {
+		alert("아이디를 입력하여 주시기 바랍니다.");
+		history.back();
+		document.frm2.userid.focus();
+		return false;
+	 }
+	
+	 if(document.frm2.passwd1.value=="")
+	 {
+		alert("비밀번호를 입력하여 주시기 바랍니다.");
+		history.back();
+		document.frm2.passwd1.focus();
+		return false;
+	 }
+document.frm2.submit();
+}
+</script>
+<body>
+	<FORM NAME="frm2" ACTION="./sub10.jsp" METHOD="post">
+	<canvas id="myCanvas1" width="700" height="400" style="position:absolute; left:300; top:100; border:1px solid #e3ecf9;"></canvas>
+	<a href = "index.html"><img src="배너.png" style="position:relative;left:450;top:100" width="400" height="150"></a>
+	<input type = "text" name = "userid" size = "15" style="position:absolute; left:450;top:300; width:400; height:40; letter-spacing:0px; font-size:20" placeholder = "아이디입력">
+	<input type = "password" name = "passwd1" size = "15" style="position:absolute;left:450;top:350; width:400; height:40; letter-spacing:0px; font-size:20" placeholder = "비밀번호입력">
+	<button style="position:absolute;left:600;top:400" width="400" height="50" onclick="valid_check()">로그인</button>
+	</body>
+</FORM>
+</html>
